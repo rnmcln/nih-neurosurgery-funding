@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.0.2 — 2026-10-13
+
+- Moved the Figure 1 nominal- and constant-dollar series labels into a compact
+  key above the data so no annotation crosses either trajectory.
+- Re-rendered and visually verified the clean and tracked manuscripts; no data,
+  analysis, or reported result changed.
+
 ## v1.0.1 — 2026-10-13
 
 - Redesigned all five main and three supplementary figures with restrained

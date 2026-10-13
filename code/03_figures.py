@@ -106,13 +106,18 @@ phi = np.exp((ic + sl * px) + piw) / 1e6
 fig, ax = plt.subplots(figsize=(6.15, 3.25))
 ax.fill_between(X, plo, phi, color=PALE, alpha=0.18, linewidth=0, zorder=1)
 ax.plot(X, proj, color=MUTED, lw=1.0, ls=(0, (4, 2)), zorder=2)
-ax.plot(X, nominal, color=PRIMARY_L, lw=1.35, marker="o", ms=3.0,
-        mfc="white", mew=0.8, zorder=3)
-ax.plot(X, real, color=PRIMARY, lw=2.0, marker="o", ms=3.2, zorder=4)
-ax.text(4.9, real[5] + 9, "Constant 2025 dollars", color=PRIMARY,
-        fontsize=7.5, ha="left", va="bottom")
-ax.text(4.9, nominal[5] - 8, "Nominal dollars", color=PRIMARY_L,
-        fontsize=7.5, ha="left", va="top")
+nominal_line, = ax.plot(X, nominal, color=PRIMARY_L, lw=1.35, marker="o",
+                        ms=3.0, mfc="white", mew=0.8, zorder=3)
+real_line, = ax.plot(X, real, color=PRIMARY, lw=2.0, marker="o", ms=3.2,
+                     zorder=4)
+legend = ax.legend(
+    [real_line, nominal_line], ["Constant 2025 dollars", "Nominal dollars"],
+    loc="upper left", bbox_to_anchor=(0.01, 0.995), borderaxespad=0,
+    frameon=False, handlelength=2.5, handletextpad=0.7, labelspacing=0.55,
+    fontsize=7.5,
+)
+for label, color in zip(legend.get_texts(), [PRIMARY, PRIMARY_L]):
+    label.set_color(color)
 ax.text(6.85, 352, "FY2015–FY2023 trend\n95% prediction interval",
         color=MUTED, fontsize=6.9, ha="left", va="top")
 ax.text(10.0, real[-1] - 14, f"FY2025  ${real[-1]:.0f}M", color=INK,
