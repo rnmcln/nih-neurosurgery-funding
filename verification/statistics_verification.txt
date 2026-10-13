@@ -1,0 +1,214 @@
+==============================================================================
+INDEPENDENT STATISTICS VERIFICATION REPORT
+Manuscript: NIH funding to neurosurgery departments, FY2015-FY2025
+Verification run: 2026-10-12
+Method: the raw RePORTER export is reloaded and every reported quantity is
+recomputed from scratch by this standalone script, then compared with the
+value stated in the manuscript. Tolerances allow for display rounding.
+==============================================================================
+
+1. COHORT AND DEDUPLICATION
+  [PASS] Raw export rows
+         recomputed = 8,672   manuscript = 8,672
+  [PASS] Deduplicated grant-year records
+         recomputed = 8,480   manuscript = 8,480
+  [PASS] Surplus duplicate rows removed
+         recomputed = 192   manuscript = 192
+  [PASS] Distinct duplicated Application IDs
+         recomputed = 164   manuscript = 164
+  [PASS] Unique projects
+         recomputed = 8,411   manuscript = 8,411
+  [PASS] Unique institutions
+         recomputed = 87   manuscript = 87
+  [PASS] Unique contact PIs
+         recomputed = 1,119   manuscript = 1,119
+  [PASS] Total funding, raw (USD)
+         recomputed = $3,453,614,202   manuscript = $3,453,614,202
+  [PASS] Total funding, deduplicated (USD)
+         recomputed = $3,318,761,705   manuscript = $3,318,761,705
+  [PASS] Double-counting removed (USD millions)
+         recomputed = $134.9M   manuscript = $134.9M
+  [PASS] Double-counting removed (% of raw)
+         recomputed = 3.9%   manuscript = 3.9%
+  [PASS] All duplicated Application IDs carry identical Total Cost
+         recomputed = yes   manuscript = yes
+
+2. FUNDING TRENDS (constant 2025 US dollars)
+  [PASS] Real funding FY2015 (USD millions)
+         recomputed = $131.2M   manuscript = $131.2M
+  [PASS] Real funding FY2023 peak (USD millions)
+         recomputed = $268.5M   manuscript = $268.5M
+  [PASS] Real funding FY2024 (USD millions)
+         recomputed = $255.3M   manuscript = $255.3M
+  [PASS] Real funding FY2025 (USD millions)
+         recomputed = $245.7M   manuscript = $245.7M
+  [PASS] Real CAGR FY2015-FY2025 (%)
+         recomputed = 6.5%   manuscript = 6.5%
+  [PASS] Nominal CAGR FY2015-FY2025 (%)
+         recomputed = 9.8%   manuscript = 9.8%
+  [PASS] Peak-to-FY2025 real decline (%)
+         recomputed = -8.5%   manuscript = -8.5%
+  [PASS] Peak fiscal year
+         recomputed = 2023   manuscript = 2023
+  [PASS] Raw-series peak fiscal year (sensitivity)
+         recomputed = 2023   manuscript = 2023
+  [PASS] Raw-series peak-to-FY2025 decline (%)
+         recomputed = -8.1%   manuscript = -8.1%
+  [PASS] NIH-wide RPG real change FY2023-FY2025 (%)
+         recomputed = -1.1%   manuscript = -1.1%
+  [PASS] Total NIH appropriation real change FY2023-FY2025 (%)
+         recomputed = -6.5%   manuscript = -6.5%
+  [PASS] NIH-wide RPG award-count change FY2023-FY2025 (%)
+         recomputed = -5.7%   manuscript = -5.7%
+
+3. SHARE OF TOTAL NIH APPROPRIATION (approximate benchmark)
+  [PASS] Budget share FY2015 (%)
+         recomputed = 0.32%   manuscript = 0.32%
+  [PASS] Budget share FY2023 (%)
+         recomputed = 0.53%   manuscript = 0.53%
+  [PASS] Budget share FY2025 (%)
+         recomputed = 0.52%   manuscript = 0.52%
+
+4. FUNDING MECHANISMS (FY2015-FY2025, real USD)
+  [PASS] R01 share of funding (%)
+         recomputed = 54.5%   manuscript = 54.5%
+  [PASS] R01 + R37 share of funding (%)
+         recomputed = 56.2%   manuscript = 56.2%
+  [PASS] Window total real funding (USD billion)
+         recomputed = $2.3B   manuscript = $2.3B
+
+5. INSTITUTIONAL CONCENTRATION (FY2015-FY2025)
+  [PASS] Gini coefficient range, lower bound
+         recomputed = 0.543   manuscript = 0.543
+  [PASS] Gini coefficient range, upper bound
+         recomputed = 0.576   manuscript = 0.576
+  [PASS] Top-10 share range, lower bound (%)
+         recomputed = 53.5%   manuscript = 53.5%
+  [PASS] Top-10 share range, upper bound (%)
+         recomputed = 61.3%   manuscript = 61.3%
+  [PASS] HHI range, lower bound
+         recomputed = 408   manuscript = 408
+  [PASS] HHI range, upper bound
+         recomputed = 651   manuscript = 651
+  [PASS] Funded departments FY2015
+         recomputed = 45   manuscript = 45
+  [PASS] Funded departments FY2024
+         recomputed = 59   manuscript = 59
+  [PASS] Funded departments FY2025
+         recomputed = 54   manuscript = 54
+  [PASS] FY2025 median per-department funding (USD millions)
+         recomputed = $2.75M   manuscript = $2.75M
+  [PASS] FY2025 IQR lower (USD millions)
+         recomputed = $1.14M   manuscript = $1.14M
+  [PASS] FY2025 IQR upper (USD millions)
+         recomputed = $5.87M   manuscript = $5.87M
+  [PASS] Largest cumulative recipient
+         recomputed = UNIVERSITY OF CALIFORNIA, SAN FRANCISCO   manuscript = UNIVERSITY OF CALIFORNIA, SAN FRANCISCO
+  [PASS] Largest cumulative recipient real funding (USD millions)
+         recomputed = $302.6M   manuscript = $302.6M
+
+6. EARLY-CAREER AWARD TRAJECTORIES
+  [PASS] Mature early-career cohort (n)
+         recomputed = 266   manuscript = 266
+  [PASS] Transitioned to independent R award (n)
+         recomputed = 55   manuscript = 55
+  [PASS] Transition rate (%)
+         recomputed = 20.7%   manuscript = 20.7%
+  [PASS] Median years to independent R award
+         recomputed = 5.0   manuscript = 5.0
+  [PASS] Mentored-K entrants (n)
+         recomputed = 104   manuscript = 104
+  [PASS] Mentored-K transition rate (%)
+         recomputed = 40.4%   manuscript = 40.4%
+  [PASS] Fellowship entrants (n)
+         recomputed = 162   manuscript = 162
+  [PASS] Fellowship transition rate (%)
+         recomputed = 8.0%   manuscript = 8.0%
+  [PASS] Early-career sensitivity FY<=2017, cohort (n)
+         recomputed = 233   manuscript = 233
+  [PASS] Early-career sensitivity FY<=2017, transitioned (n)
+         recomputed = 51   manuscript = 51
+  [PASS] Early-career sensitivity FY<=2017, rate (%)
+         recomputed = 21.9%   manuscript = 21.9%
+  [PASS] Early-career sensitivity FY<=2018, cohort (n)
+         recomputed = 254   manuscript = 254
+  [PASS] Early-career sensitivity FY<=2018, transitioned (n)
+         recomputed = 53   manuscript = 53
+  [PASS] Early-career sensitivity FY<=2018, rate (%)
+         recomputed = 20.9%   manuscript = 20.9%
+  [PASS] Early-career sensitivity FY<=2019, cohort (n)
+         recomputed = 266   manuscript = 266
+  [PASS] Early-career sensitivity FY<=2019, transitioned (n)
+         recomputed = 55   manuscript = 55
+  [PASS] Early-career sensitivity FY<=2019, rate (%)
+         recomputed = 20.7%   manuscript = 20.7%
+  [PASS] Early-career sensitivity FY<=2020, cohort (n)
+         recomputed = 280   manuscript = 280
+  [PASS] Early-career sensitivity FY<=2020, transitioned (n)
+         recomputed = 56   manuscript = 56
+  [PASS] Early-career sensitivity FY<=2020, rate (%)
+         recomputed = 20.0%   manuscript = 20.0%
+  [PASS] Multi-PI grant-years (%)
+         recomputed = 14.7%   manuscript = 14.7%
+  [PASS] Contact PIs observed FY2015-FY2025 (n)
+         recomputed = 707   manuscript = 707
+  [PASS] Contact PIs linked to >1 institution FY2015-FY2025 (n)
+         recomputed = 43   manuscript = 43
+
+7. T32 - R01 ASSOCIATION (negative-binomial regression)
+  [PASS] Unadjusted T32 incidence rate ratio
+         recomputed = 3.52   manuscript = 3.52
+  [PASS] Adjusted T32 incidence rate ratio
+         recomputed = 1.07   manuscript = 1.07
+  [PASS] Adjusted T32 IRR 95% CI lower
+         recomputed = 0.45   manuscript = 0.45
+  [PASS] Adjusted T32 IRR 95% CI upper
+         recomputed = 2.56   manuscript = 2.56
+  [PASS] Institutions holding a T32 (FY2010-2020)
+         recomputed = 9   manuscript = 9
+  [PASS] Median R01 PIs FY2021-2025, T32 institutions
+         recomputed = 9.0   manuscript = 9.0
+  [PASS] Median R01 PIs FY2021-2025, non-T32 institutions
+         recomputed = 1.0   manuscript = 1.0
+
+8. KEYWORD-ATTRIBUTED DISEASE-DOMAIN FUNDING (FY2015-FY2025, real USD)
+  [PASS] Neuro-oncology domain funding (USD millions)
+         recomputed = $684M   manuscript = $684M
+  [PASS] Spine domain funding (USD millions)
+         recomputed = $588M   manuscript = $588M
+  [PASS] Cerebrovascular domain funding (USD millions)
+         recomputed = $565M   manuscript = $565M
+  [PASS] Functional/epilepsy domain funding (USD millions)
+         recomputed = $491M   manuscript = $491M
+  [PASS] Trauma/TBI domain funding (USD millions)
+         recomputed = $247M   manuscript = $247M
+  [PASS] Hydrocephalus domain funding (USD millions)
+         recomputed = $178M   manuscript = $178M
+  [PASS] Peripheral nerve domain funding (USD millions)
+         recomputed = $95M   manuscript = $95M
+  [PASS] Unclassified funding share (%)
+         recomputed = 14.6%   manuscript = 14.6%
+  [PASS] Manual-audit IDs equal the 20 highest-funded contact PIs
+         recomputed = yes   manuscript = yes
+  [PASS] Manual PI audit: neurosurgeon (n)
+         recomputed = 15   manuscript = 15
+  [PASS] Manual PI audit: non-neurosurgeon physician (n)
+         recomputed = 3   manuscript = 3
+  [PASS] Manual PI audit: non-physician scientist (n)
+         recomputed = 2   manuscript = 2
+
+9. MeSH RETRIEVAL COVERAGE (NCBI E-utilities, queried 20 May 2026)
+  [PASS] General MeSH:keyword ratio 2015
+         recomputed = 0.66   manuscript = 0.66
+  [PASS] General MeSH:keyword ratio 2023
+         recomputed = 0.45   manuscript = 0.45
+  [PASS] Journal MeSH ratio 2015
+         recomputed = 0.43   manuscript = 0.43
+  [PASS] Journal MeSH ratio 2023
+         recomputed = 0.3   manuscript = 0.3
+
+==============================================================================
+SUMMARY: 91 checks PASSED, 0 checks FAILED, 91 total.
+All reported statistics were independently reproduced from the raw
+NIH RePORTER export. No discrepancies were found.
+==============================================================================

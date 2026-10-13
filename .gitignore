@@ -1,0 +1,12 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+outputs/
+data/source/
+API keys.txt
+*.env
+*.docx
+*.xlsx
+*.xls
+*.csv

@@ -1,0 +1,100 @@
+{
+  "queried": "2026-05-20",
+  "years": {
+    "2015": {
+      "mesh_restricted": 7287,
+      "keyword_augmented": 11103,
+      "mesh_to_keyword_ratio": 0.6563091056471224,
+      "journal_all": 3766,
+      "journal_mesh": 1637,
+      "journal_mesh_ratio": 0.4346787041954328
+    },
+    "2016": {
+      "mesh_restricted": 7466,
+      "keyword_augmented": 11568,
+      "mesh_to_keyword_ratio": 0.6454011065006916,
+      "journal_all": 4594,
+      "journal_mesh": 1842,
+      "journal_mesh_ratio": 0.40095777100565955
+    },
+    "2017": {
+      "mesh_restricted": 7780,
+      "keyword_augmented": 12123,
+      "mesh_to_keyword_ratio": 0.6417553410871897,
+      "journal_all": 5179,
+      "journal_mesh": 2010,
+      "journal_mesh_ratio": 0.3881058119328056
+    },
+    "2018": {
+      "mesh_restricted": 8163,
+      "keyword_augmented": 12996,
+      "mesh_to_keyword_ratio": 0.6281163434903048,
+      "journal_all": 6253,
+      "journal_mesh": 2192,
+      "journal_mesh_ratio": 0.3505517351671198
+    },
+    "2019": {
+      "mesh_restricted": 8445,
+      "keyword_augmented": 13758,
+      "mesh_to_keyword_ratio": 0.6138246838203227,
+      "journal_all": 6841,
+      "journal_mesh": 2145,
+      "journal_mesh_ratio": 0.3135506504896945
+    },
+    "2020": {
+      "mesh_restricted": 9054,
+      "keyword_augmented": 15428,
+      "mesh_to_keyword_ratio": 0.5868550687062484,
+      "journal_all": 6549,
+      "journal_mesh": 2345,
+      "journal_mesh_ratio": 0.3580699343411208
+    },
+    "2021": {
+      "mesh_restricted": 8160,
+      "keyword_augmented": 15396,
+      "mesh_to_keyword_ratio": 0.5300077942322681,
+      "journal_all": 5509,
+      "journal_mesh": 1904,
+      "journal_mesh_ratio": 0.34561626429479037
+    },
+    "2022": {
+      "mesh_restricted": 6183,
+      "keyword_augmented": 13637,
+      "mesh_to_keyword_ratio": 0.45339884138740194,
+      "journal_all": 4952,
+      "journal_mesh": 1337,
+      "journal_mesh_ratio": 0.2699919224555735
+    },
+    "2023": {
+      "mesh_restricted": 6122,
+      "keyword_augmented": 13592,
+      "mesh_to_keyword_ratio": 0.45041200706297824,
+      "journal_all": 4714,
+      "journal_mesh": 1407,
+      "journal_mesh_ratio": 0.29847263470513363
+    },
+    "2024": {
+      "mesh_restricted": 7642,
+      "keyword_augmented": 15215,
+      "mesh_to_keyword_ratio": 0.5022674991784424,
+      "journal_all": 5583,
+      "journal_mesh": 2184,
+      "journal_mesh_ratio": 0.3911875335840946
+    },
+    "2025": {
+      "mesh_restricted": 7005,
+      "keyword_augmented": 15537,
+      "mesh_to_keyword_ratio": 0.45085923923537363,
+      "journal_all": 4473,
+      "journal_mesh": 1564,
+      "journal_mesh_ratio": 0.3496534764140398
+    }
+  },
+  "summary": {
+    "general_ratio_2015": 0.6563091056471224,
+    "general_ratio_2023": 0.45041200706297824,
+    "journal_ratio_2015": 0.4346787041954328,
+    "journal_ratio_2023": 0.29847263470513363,
+    "note": "2024-2025 shown for completeness but excluded from trend claims because MeSH indexing of recent publications is incomplete."
+  }
+}

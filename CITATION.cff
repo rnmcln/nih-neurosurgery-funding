@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this reproducibility package, please cite the associated article and this software release."
+title: "NIH funding to neurosurgery departments, FY2015–FY2025: reproducibility package"
+type: software
+version: 1.0.0
+date-released: 2026-10-13
+authors:
+  - family-names: Lawson McLean
+    given-names: Aaron
+    orcid: "https://orcid.org/0000-0001-5528-6905"
+  - family-names: Kahr
+    given-names: Julian
+  - family-names: Senft
+    given-names: Christian
+repository-code: "https://github.com/rnmcln/nih-neurosurgery-funding"
+license: MIT
+keywords:
+  - NIH RePORTER
+  - neurosurgery
+  - research funding
+  - bibliometrics
+  - reproducibility
