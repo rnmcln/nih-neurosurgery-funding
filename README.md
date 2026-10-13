@@ -1,5 +1,7 @@
 # NIH funding to neurosurgery departments, FY2015–FY2025
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23334480.svg)](https://doi.org/10.5281/zenodo.23334480)
+
 Reproducibility materials for an analysis of National Institutes of Health
 (NIH) funding administratively assigned to neurosurgery departments, early-
 career award trajectories, institutional training infrastructure, and MeSH
@@ -9,6 +11,9 @@ This release contains analysis code, non-identifiable aggregate results,
 figures, query documentation, and an independent verification report. It does
 not redistribute the NIH RePORTER row-level export, applicant-supplied
 narratives, investigator-level records, or a derived row-level cohort.
+
+The archived v1.0.0 release is available from Zenodo at
+[doi:10.5281/zenodo.23334480](https://doi.org/10.5281/zenodo.23334480).
 
 ## Main findings
 
