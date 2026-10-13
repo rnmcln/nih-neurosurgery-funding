@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.0.3 — 2026-10-13
+
+- Renumbered the training-infrastructure and disease-domain figures so main
+  figures are cited in numerical order.
+- Renumbered supplementary deduplication and Lorenz figures so supplementary
+  figures are cited in numerical order, and standardized all manuscript
+  callouts to the Figure S1–S3 form.
+- Corrected the supplementary description of the indexed NIH-wide benchmark;
+  no data, analysis, or reported result changed.
+
 ## v1.0.2 — 2026-10-13
 
 - Moved the Figure 1 nominal- and constant-dollar series labels into a compact
@@ -13,7 +23,7 @@
   styling, direct labels, and denser but clearer presentation.
 - Replaced the dual-axis concentration graphic with aligned small multiples
   and the domain bars with a paired dot plot.
-- Corrected the Figure 4 log-axis presentation so tick and estimate labels do
+- Corrected the Figure 4 log-axis presentation so tick and estimate labels did
   not overlap; no statistical values changed.
 - Added anonymous, normalized FY2025 Lorenz-curve coordinates to the bundled
   aggregate output so every distributed figure can be regenerated without

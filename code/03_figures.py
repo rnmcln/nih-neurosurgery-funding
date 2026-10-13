@@ -182,7 +182,7 @@ fig.subplots_adjust(left=0.10, right=0.955, bottom=0.10, top=0.97,
 save(fig, "figure2_concentration")
 
 
-# FIGURE 3 -- paired classifier estimates by disease domain
+# FIGURE 4 -- paired classifier estimates by disease domain
 s_a = A["subspecialty_real_funding"]
 s_b = A["subspecialty_real_funding_B"]
 order = ["Neuro-oncology", "Spine", "Cerebrovascular", "Functional/epilepsy",
@@ -214,10 +214,10 @@ key = [
 ax.legend(handles=key, loc="lower right", bbox_to_anchor=(1.0, 1.005), ncol=2,
           frameon=False, handletextpad=0.4, columnspacing=1.2, borderaxespad=0)
 fig.subplots_adjust(left=0.27, right=0.98, bottom=0.16, top=0.88)
-save(fig, "figure3_domain")
+save(fig, "figure4_domain")
 
 
-# FIGURE 4 -- early-career transitions and T32 model estimates
+# FIGURE 3 -- early-career transitions and T32 model estimates
 pp = A["pi_pipeline"]
 tm = pp["t32_adjusted_model"]
 fig = plt.figure(figsize=(7.35, 3.15))
@@ -263,7 +263,7 @@ ax2.xaxis.set_minor_locator(NullLocator())
 ax2.set_yticks(yy); ax2.set_yticklabels(labels)
 theme(ax2, grid_axis="x"); tag(ax2, "B")
 fig.subplots_adjust(left=0.12, right=0.99, bottom=0.19, top=0.93)
-save(fig, "figure4_training")
+save(fig, "figure3_training")
 
 
 # FIGURE 5 -- MeSH retrieval coverage
@@ -294,7 +294,7 @@ fig.subplots_adjust(left=0.10, right=0.98, bottom=0.17, top=0.97)
 save(fig, "figure5_mesh")
 
 
-# SUPPLEMENTARY FIGURE 1 -- Lorenz curve, FY2025
+# SUPPLEMENTARY FIGURE 3 -- Lorenz curve, FY2025
 if "fy2025_lorenz_curve" in A:
     xx = np.array(A["fy2025_lorenz_curve"]["department_share"], dtype=float)
     cum = np.array(A["fy2025_lorenz_curve"]["funding_share"], dtype=float)
@@ -320,7 +320,7 @@ ax.set(xlim=(0, 1), ylim=(0, 1), xlabel="Cumulative share of funded departments"
        ylabel="Cumulative share of funding")
 ax.set_aspect("equal"); theme(ax, grid_axis="both")
 fig.subplots_adjust(left=0.16, right=0.98, bottom=0.14, top=0.98)
-save(fig, "sfigure1_lorenz")
+save(fig, "sfigure3_lorenz")
 
 
 # SUPPLEMENTARY FIGURE 2 -- NIH-wide benchmark, indexed real funding
@@ -346,7 +346,7 @@ fig.subplots_adjust(left=0.10, right=0.98, bottom=0.16, top=0.97)
 save(fig, "sfigure2_benchmark")
 
 
-# SUPPLEMENTARY FIGURE 3 -- deduplication sensitivity and yearly effect
+# SUPPLEMENTARY FIGURE 1 -- deduplication sensitivity and yearly effect
 ds = A["dedup_sensitivity"]
 raw_real = np.array([ds["raw_real"][str(y)] / 1e6 for y in YEARS])
 ddup_real = np.array([A["fy_real"][str(y)] / 1e6 for y in YEARS])
@@ -375,6 +375,6 @@ for xi, value in zip(X, removed_pct):
 ax2.set(ylim=(0, 15), ylabel="Removed\n(%)")
 ax2.set_yticks([0, 5, 10, 15]); sparse_year_ticks(ax2); theme(ax2)
 fig.subplots_adjust(left=0.11, right=0.98, bottom=0.13, top=0.98)
-save(fig, "sfigure3_dedup")
+save(fig, "sfigure1_dedup")
 
 print("\nAll figures written to", FIGDIR)

@@ -399,7 +399,7 @@ for y in range(ANALYSIS_START, ANALYSIS_END + 1):
           f"top5={top5:5.1f}%  top10={top10:5.1f}%  median=${inst.median():,.0f}")
 
 # Rights-safe, anonymous aggregate coordinates for the FY2025 Lorenz curve.
-# These shares allow the public figure package to reproduce Figure S1 without
+# These shares allow the public figure package to reproduce Figure S3 without
 # redistributing institution names, institution-level amounts, or row-level data.
 fy2025_inst = (dedup[dedup["Fiscal Year"] == 2025]
                .groupby("Organization Name")["cost"].sum())

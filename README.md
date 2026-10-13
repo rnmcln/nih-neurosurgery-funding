@@ -1,6 +1,6 @@
 # NIH funding to neurosurgery departments, FY2015–FY2025
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23334480.svg)](https://doi.org/10.5281/zenodo.23334480)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23334479.svg)](https://doi.org/10.5281/zenodo.23334479)
 
 Reproducibility materials for an analysis of National Institutes of Health
 (NIH) funding administratively assigned to neurosurgery departments, early-
@@ -12,10 +12,11 @@ figures, query documentation, and an independent verification report. It does
 not redistribute the NIH RePORTER row-level export, applicant-supplied
 narratives, investigator-level records, or a derived row-level cohort.
 
-Version 1.0.2 contains the current five main and three supplementary figures,
-including a corrected Figure 1 key that does not cross the plotted data. The
-analysis and reported statistics are unchanged. The DOI above is the stable
-Zenodo concept DOI; the archived v1.0.0 release remains available at
+Version 1.0.3 contains the current five main and three supplementary figures.
+Main Figures 3–4 and Supplementary Figures S1–S3 are numbered in first-citation
+order, and the Figure 1 key does not cross the plotted data. The analysis and
+reported statistics are unchanged. The DOI above is the stable Zenodo concept
+DOI; the archived v1.0.0 release remains available at
 [doi:10.5281/zenodo.23334480](https://doi.org/10.5281/zenodo.23334480).
 
 ## Main findings
