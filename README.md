@@ -12,7 +12,9 @@ figures, query documentation, and an independent verification report. It does
 not redistribute the NIH RePORTER row-level export, applicant-supplied
 narratives, investigator-level records, or a derived row-level cohort.
 
-The archived v1.0.0 release is available from Zenodo at
+Version 1.0.1 refines the presentation of all five main and three supplementary
+figures without changing the analysis or reported statistics. The DOI above is
+the stable Zenodo concept DOI; the archived v1.0.0 release remains available at
 [doi:10.5281/zenodo.23334480](https://doi.org/10.5281/zenodo.23334480).
 
 ## Main findings
@@ -87,11 +89,11 @@ An NCBI API key is optional and can be supplied as `NCBI_API_KEY`. PubMed
 counts can drift as records and indexing are updated; the bundled aggregate
 file records the counts used in the study.
 
-To regenerate figures directly from the bundled aggregate results, without the
-row-level source export:
+To regenerate figures directly from the bundled aggregate results, including
+the anonymous normalized Lorenz curve and without the row-level source export:
 
 ```bash
-REPORTER_OUTPUT_DIR=data/aggregate python code/03_figures.py
+REPORTER_OUTPUT_DIR=data/aggregate REPORTER_FIGURE_DIR=figures python code/03_figures.py
 ```
 
 ## Verification

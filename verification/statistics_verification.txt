@@ -1,7 +1,7 @@
 ==============================================================================
 INDEPENDENT STATISTICS VERIFICATION REPORT
 Manuscript: NIH funding to neurosurgery departments, FY2015-FY2025
-Verification run: 2026-10-12
+Verification run: 2026-10-13
 Method: the raw RePORTER export is reloaded and every reported quantity is
 recomputed from scratch by this standalone script, then compared with the
 value stated in the manuscript. Tolerances allow for display rounding.

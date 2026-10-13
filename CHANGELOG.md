@@ -1,5 +1,18 @@
 # Changelog
 
+## v1.0.1 — 2026-10-13
+
+- Redesigned all five main and three supplementary figures with restrained
+  styling, direct labels, and denser but clearer presentation.
+- Replaced the dual-axis concentration graphic with aligned small multiples
+  and the domain bars with a paired dot plot.
+- Corrected the Figure 4 log-axis presentation so tick and estimate labels do
+  not overlap; no statistical values changed.
+- Added anonymous, normalized FY2025 Lorenz-curve coordinates to the bundled
+  aggregate output so every distributed figure can be regenerated without
+  the excluded row-level cohort.
+- Re-ran the independent verification suite: 91 checks passed, 0 failed.
+
 ## v1.0.0 — 2026-10-13
 
 - Added an inflation-adjusted NIH-wide Research Project Grant benchmark.

@@ -398,6 +398,16 @@ for y in range(ANALYSIS_START, ANALYSIS_END + 1):
     print(f"  FY{y}: n={len(inst):2d}  Gini={g:.3f}  HHI={h:6.0f}  "
           f"top5={top5:5.1f}%  top10={top10:5.1f}%  median=${inst.median():,.0f}")
 
+# Rights-safe, anonymous aggregate coordinates for the FY2025 Lorenz curve.
+# These shares allow the public figure package to reproduce Figure S1 without
+# redistributing institution names, institution-level amounts, or row-level data.
+fy2025_inst = (dedup[dedup["Fiscal Year"] == 2025]
+               .groupby("Organization Name")["cost"].sum())
+fy2025_inst = np.sort(fy2025_inst[fy2025_inst > 0].values)
+fy2025_lorenz_funding = np.insert(
+    np.cumsum(fy2025_inst) / fy2025_inst.sum(), 0, 0)
+fy2025_lorenz_departments = np.linspace(0, 1, len(fy2025_lorenz_funding))
+
 # Cumulative top institutions FY2015-2025 (real USD)
 dedup_win = dedup[(dedup["Fiscal Year"] >= ANALYSIS_START) &
                   (dedup["Fiscal Year"] <= ANALYSIS_END)].copy()
@@ -1028,6 +1038,10 @@ output = {
     "nih_appropriation_real": {str(k): v for k, v in nih_appropriation_real.items()},
     "nih_benchmark": nih_benchmark,
     "concentration": {str(k): v for k, v in concentration.items()},
+    "fy2025_lorenz_curve": {
+        "department_share": [float(v) for v in fy2025_lorenz_departments],
+        "funding_share": [float(v) for v in fy2025_lorenz_funding],
+    },
     "top_institutions_cumulative_real": {
         org: float(val) for org, val in inst_cum.head(15).items()},
     "mechanism_mix": mech_mix,
